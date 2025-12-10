@@ -1,0 +1,16 @@
+{
+  "name": "ejaar-website",
+  "version": "1.0.0",
+  "description": "Ejaar rental platform website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "keywords": ["ejaar", "rental", "bahrain"],
+  "author": "Ejaar Team",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
