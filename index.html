@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejaar - Modern Rental Platform for Bahrain</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="images/ejaar-logo.png" alt="Ejaar Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#properties" class="nav-link">Properties</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#download" class="nav-link download-btn">Download App</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Ejaar</h1>
+                <p class="hero-subtitle">Bahrain's Modern Rental Platform</p>
+                <p class="hero-description">
+                    Connecting landlords and renters directly. No middleman. No hassle. 
+                    Experience streamlined property listing, online payments, and transparent rental processes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#properties" class="btn btn-primary">View Properties</a>
+                    <a href="#download" class="btn btn-secondary">Download App</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Ejaar</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Bridging the Gap in Bahrain's Rental Market</h3>
+                    <p>
+                        In the real estate market, there is limited digitalization of local rental/leasing 
+                        processes and an absence of a unified platform to support online payments, transparent 
+                        listings, and maintenance reporting.
+                    </p>
+                    <p>
+                        <strong>Ejaar</strong>, a centralized rental platform for Bahrain, was developed to bridge this gap 
+                        and provide landlords with a tool that allows them to have direct access to renters 
+                        without the need for a middleman.
+                    </p>
+                    <p>
+                        The work involved in this project spans both business and technology. An in-depth 
+                        business plan was conducted to understand what the market needs and how Ejaar can 
+                        position itself. The app was developed to be user-friendly, efficient, and effective.
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏠</div>
+                        <h4>Direct Property Posting</h4>
+                        <p>Landlords post properties directly to renters</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💳</div>
+                        <h4>Online Payments</h4>
+                        <p>Secure and convenient payment processing</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h4>Issue Reporting</h4>
+                        <p>Easy maintenance and issue tracking</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>Modern Platform</h4>
+                        <p>Alternative to traditional agency-based processes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <h2 class="section-title">Available Properties</h2>
+            <p class="section-subtitle">Explore our current listings in Bahrain</p>
+            
+            <!-- Loading indicator -->
+            <div id="loading" class="loading-container">
+                <div class="loading-spinner"></div>
+                <p>Loading properties...</p>
+            </div>
+            
+            <!-- Properties will be loaded here from Firebase -->
+            <div class="properties-grid" id="properties-grid"></div>
+
+            <!-- No properties message -->
+            <div id="no-properties" class="no-properties" style="display: none;">
+                <p>No properties available at the moment. Check back soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">Meet the developers behind Ejaar</p>
+            
+            <div class="team-grid">
+                    <a href="https://www.linkedin.com/in/zainab-moosa" target="_blank" style="text-decoration: none;">
+                <div class="team-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-badge">
+                    <div class="team-avatar">
+                         <img src="images/zainab.jpg" alt="Zainab Moosa Ali">
+                        </div>
+                    <h3>Zainab Moosa Ali</h3>
+                    <p class="team-id">Information Systems</p>
+                    <p class="team-id">202107844</p>
+                    <p class="team-role">Developer</p>
+                </div>
+                </a>
+
+                <div class="team-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-badge">
+                    <div class="team-avatar">N</div>
+                    <h3>Noor Yusuf Almas</h3>
+                     <p class="team-id">Information Systems</p>
+                    <p class="team-id">202101392</p>
+                    <p class="team-role">Developer</p>
+                </div>
+                
+                <div class="team-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-badge">
+                    <div class="team-avatar">Z</div>
+                    <h3>Zahra Hussain Alshaikh</h3>
+                     <p class="team-id">Information Systems</p>
+                    <p class="team-id">202010571</p>
+                    <p class="team-role">Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="section-title">Ejaar Mobile App</h2>
+                <p class="download-subtitle">Get the full experience with our mobile app</p>
+                <p class="download-text">
+                    Access all property listings, book viewings, make payments, and report issues directly from your mobile device.
+                </p>
+                
+                <!-- App Screenshots -->
+                <div class="app-screenshots-wrapper">
+                    <div class="app-screenshots">
+                        <div class="screenshot-card">
+                            <img src="images/screenshot1.png" alt="Ejaar App - Home Screen">
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="images/screenshot2.png" alt="Ejaar App - Property Search">
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="images/screenshot3.png" alt="Ejaar App - Property Details">
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="images/screenshot4.png" alt="Ejaar App - Payment">
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="images/screenshot5.png" alt="Ejaar App - User Profile">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Launch Status -->
+                <div class="download-status">
+                    <div class="status-badge-launch">
+                        <span class="status-icon">🚀</span>
+                        <span>Coming Soon</span>
+                    </div>
+                    <p class="status-text">
+                        Our mobile app is currently in development. Stay tuned for the official launch!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Tools Used</h2>
+            <p class="section-subtitle">Technologies powering the Ejaar platform</p>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">📱</div>
+                    <h4>Flutter Framework</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">💻</div>
+                    <h4>Dart</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔐</div>
+                    <h4>Firebase Authentication</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🗄️</div>
+                    <h4>Cloud Firestore</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">☁️</div>
+                    <h4>Firebase Storage</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">⚡</div>
+                    <h4>Cloud Functions</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔧</div>
+                    <h4>Visual Studio Code</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🖥️</div>
+                    <h4>Xampp</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🍎</div>
+                    <h4>Xcode</h4>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🎨</div>
+                    <h4>Figma</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ejaar</h3>
+                    <p>Modern rental platform for Bahrain</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@ejaar.com</p>
+                    <p>Bahrain</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#team">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ejaar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Firebase Configuration -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBU3vxLiaUx06_k6CmKkAvW7nsiheCWybM",
+            authDomain: "ejaar-ec682.firebaseapp.com",
+            projectId: "ejaar-ec682",
+            storageBucket: "ejaar-ec682.firebasestorage.app",
+            messagingSenderId: "5331806878",
+            appId: "1:5331806878:web:e105e3710c8a329695298f"
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
