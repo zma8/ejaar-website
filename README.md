@@ -42,5 +42,3 @@ The mobile app is built with Flutter and Dart, providing a seamless cross-platfo
 - **Zainab Moosa Ali** - 202107844 - Developer - [LinkedIn](https://www.linkedin.com/in/zainab-moosa)
 - **Noor Yusuf Almas** - 202101392 - Developer - [LinkedIn](https://www.linkedin.com/in/nooralmas)
 - **Zahra Hussain Alshaikh** - 202010571 - Developer - [LinkedIn](http://linkedin.com/in/zahra-hussain-al-shaikh-869b46307)
-
-**Related Repository**: [Ejaar Mobile App](https://github.com/yourusername/ejaar)
