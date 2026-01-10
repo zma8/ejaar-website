@@ -8,13 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="images/ejaar-logo.png" alt="Ejaar Logo" class="logo">
+                <img src="./public/images/ejaar-logo.png" alt="Ejaar Logo" class="logo">
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
@@ -70,22 +72,22 @@
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">🏠</div>
+                        <div class="feature-icon"><i class="fas fa-home"></i></div>
                         <h4>Direct Property Posting</h4>
                         <p>Landlords post properties directly to renters</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">💳</div>
+                        <div class="feature-icon"><i class="fas fa-credit-card"></i></div>
                         <h4>Online Payments</h4>
                         <p>Secure and convenient payment processing</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🔧</div>
+                        <div class="feature-icon"><i class="fas fa-tools"></i></div>
                         <h4>Issue Reporting</h4>
                         <p>Easy maintenance and issue tracking</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">📱</div>
+                        <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
                         <h4>Modern Platform</h4>
                         <p>Alternative to traditional agency-based processes</p>
                     </div>
@@ -124,43 +126,49 @@
             
             <div class="tools-grid">
                 <div class="tool-card">
-                    <div class="tool-icon">📱</div>
+                    <div class="tool-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 317" width="50" height="50">
+                            <path fill="#333333" d="M157.665 0.000 0.000 157.665 48.153 205.818 254.371 0.000z"/>
+                            <path fill="#666666" d="M156.567 145.397 72.448 229.516 156.567 313.628 254.462 215.733 210.215 171.486z"/>
+                            <path fill="#999999" d="M121.132 209.388 156.567 244.822 201.891 199.498 166.456 164.063z"/>
+                        </svg>
+                    </div>
                     <h4>Flutter Framework</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">💻</div>
+                    <div class="tool-icon"><i class="fas fa-code"></i></div>
                     <h4>Dart</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">🔐</div>
+                    <div class="tool-icon"><i class="fas fa-shield-alt"></i></div>
                     <h4>Firebase Authentication</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">🗄️</div>
+                    <div class="tool-icon"><i class="fas fa-database"></i></div>
                     <h4>Cloud Firestore</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">☁️</div>
+                    <div class="tool-icon"><i class="fas fa-cloud-upload-alt"></i></div>
                     <h4>Firebase Storage</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">⚡</div>
+                    <div class="tool-icon"><i class="fas fa-bolt"></i></div>
                     <h4>Cloud Functions</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">🔧</div>
+                    <div class="tool-icon"><i class="fas fa-terminal"></i></div>
                     <h4>Visual Studio Code</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">🖥️</div>
+                    <div class="tool-icon"><i class="fas fa-server"></i></div>
                     <h4>Xampp</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">🍎</div>
+                    <div class="tool-icon"><i class="fab fa-apple"></i></div>
                     <h4>Xcode</h4>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">🎨</div>
+                    <div class="tool-icon"><i class="fas fa-palette"></i></div>
                     <h4>Figma</h4>
                 </div>
             </div>
@@ -171,14 +179,26 @@
     <section id="team" class="team">
         <div class="container">
             <h2 class="section-title">Our Team</h2>
-            <p class="section-subtitle">Meet the developers behind Ejaar</p>
+            <p class="section-subtitle">Meet the team behind Ejaar</p>
             
             <div class="team-grid">
+                <!-- Supervisor -->
+                <a href="https://www.linkedin.com/in/dr-reem-al-kaabi-a631b2207/" target="_blank" style="text-decoration: none;">
+                    <div class="team-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-badge">
+                        <div class="team-avatar">
+                            <i class="fas fa-user-tie" style="font-size: 100px; color: #667eea;"></i>
+                        </div>
+                        <h3>Dr. Reem AlKaabi</h3>
+                        <p class="team-id">ralkaabi@uob.edu.bh</p>
+                        <p class="team-role" style="color: #667eea; font-weight: 600;">Project Supervisor</p>
+                    </div>
+                </a>
                 <a href="https://www.linkedin.com/in/zainab-moosa" target="_blank" style="text-decoration: none;">
                     <div class="team-card">
                         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-badge">
                         <div class="team-avatar">
-                            <img src="images/zainab.jpg" alt="Zainab Moosa Ali">
+                            <img src="./public/images/zainab.JPG" alt="Zainab Moosa Ali">
                         </div>
                         <h3>Zainab Moosa Ali</h3>
                         <p class="team-id">Information Systems</p>
@@ -191,7 +211,7 @@
                     <div class="team-card">
                         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-badge">
                         <div class="team-avatar">
-                            
+                            <i class="fas fa-user-circle" style="font-size: 100px; color: #667eea;"></i>
                         </div>
                         <h3>Noor Yusuf Almas</h3>
                         <p class="team-id">Information Systems</p>
@@ -204,7 +224,7 @@
                     <div class="team-card">
                         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-badge">
                         <div class="team-avatar">
-                           
+                            <i class="fas fa-user-circle" style="font-size: 100px; color: #667eea;"></i>
                         </div>
                         <h3>Zahra Hussain Alshaikh</h3>
                         <p class="team-id">Information Systems</p>
@@ -230,19 +250,19 @@
                 <div class="app-screenshots-wrapper">
                     <div class="app-screenshots">
                         <div class="screenshot-card">
-                            <img src="images/screenshot1.png" alt="Ejaar App - Home Screen">
+                            <img src="./public/images/screenshot1.png" alt="Ejaar App - Home Screen">
                         </div>
                         <div class="screenshot-card">
-                            <img src="images/screenshot2.png" alt="Ejaar App - Property Search">
+                            <img src="./public/images/screenshot2.png" alt="Ejaar App - Property Search">
                         </div>
                         <div class="screenshot-card">
-                            <img src="images/screenshot3.png" alt="Ejaar App - Property Details">
+                            <img src="./public/images/screenshot3.png" alt="Ejaar App - Property Details">
                         </div>
                         <div class="screenshot-card">
-                            <img src="images/screenshot4.png" alt="Ejaar App - Payment">
+                            <img src="./public/images/screenshot4.png" alt="Ejaar App - Payment">
                         </div>
                         <div class="screenshot-card">
-                            <img src="images/screenshot5.png" alt="Ejaar App - User Profile">
+                            <img src="./public/images/screenshot5.png" alt="Ejaar App - User Profile">
                         </div>
                     </div>
                 </div>
@@ -250,7 +270,7 @@
                 <!-- Launch Status -->
                 <div class="download-status">
                     <div class="status-badge-launch">
-                        <span class="status-icon">🚀</span>
+                        <span class="status-icon"><i class="fas fa-rocket"></i></span>
                         <span>Coming Soon</span>
                     </div>
                     <p class="status-text">
@@ -271,7 +291,7 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Email: info@ejaar.com</p>
+                    <p>Email: zma.8@yahoo.com </p>
                     <p>Bahrain</p>
                 </div>
                 <div class="footer-section">
@@ -308,9 +328,11 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore();
+        
+        console.log('Firebase initialized');
     </script>
     
     <!-- Main JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="./public/js/main.js"></script>
 </body>
 </html>
