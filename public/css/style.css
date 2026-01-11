@@ -100,6 +100,42 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
 /* Hero Section */
 .hero {
     background: navy;
@@ -357,6 +393,7 @@ section {
     font-weight: 600;
     color: var(--primary);
 }
+
 /* Team Section */
 .team {
     background: var(--secondary-bg);
@@ -429,7 +466,7 @@ section {
     line-height: 1.3;
 }
 
-.team-info {
+.team-id {
     color: var(--secondary-text);
     font-size: 14px;
     margin-bottom: 0.4rem;
@@ -443,20 +480,6 @@ section {
     margin-top: 0.5rem;
 }
 
-/* Responsive for tablets */
-@media (max-width: 1200px) {
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Responsive for mobile */
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-    }
-}
 /* Download Section */
 .download {
     background: navy;
@@ -476,7 +499,7 @@ section {
     font-size: 24px;
     margin-bottom: 1rem;
     font-weight: 600;
-        color: lightblue;
+    color: lightblue;
 }
 
 .download-text {
@@ -484,7 +507,7 @@ section {
     line-height: 1.8;
     margin-bottom: 3rem;
     opacity: 0.95;
-     color: lightblue;
+    color: lightblue;
 }
 
 /* App Screenshots Display */
@@ -569,6 +592,7 @@ section {
     font-size: 20px;
     margin-bottom: 1rem;
     animation: pulse 2s infinite;
+    color: white;
 }
 
 @keyframes pulse {
@@ -587,7 +611,7 @@ section {
 .status-text {
     font-size: 16px;
     opacity: 0.9;
-        color: lightblue;
+    color: lightblue;
 }
 
 /* Tools Section */
@@ -628,6 +652,7 @@ section {
     color: var(--primary-text);
     font-weight: 600;
 }
+
 /* Footer */
 .footer {
     background: var(--primary-text);
@@ -733,17 +758,61 @@ section {
     font-size: 18px;
 }
 
-.logo {
-    height: 60px;
-    width: auto;
-}
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
-    .nav-menu {
-        gap: 1rem;
-        font-size: 14px;
+    /* Mobile Navigation */
+    .hamburger {
+        display: flex;
     }
 
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--secondary-bg);
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
+        padding: 2rem 0;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 0;
+        padding: 1rem 0;
+        width: 100%;
+        border-bottom: 1px solid var(--alternate);
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .download-btn {
+        margin: 1rem 20px 0;
+        display: inline-block;
+        width: auto;
+    }
+
+    /* Other mobile styles */
     .hero-title {
         font-size: 42px;
     }
@@ -777,12 +846,16 @@ section {
         gap: 0.75rem;
         justify-content: flex-start;
     }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 480px) {
     .nav-menu {
-        flex-direction: column;
-        gap: 0.5rem;
+        top: 60px;
     }
 
     .hero {
